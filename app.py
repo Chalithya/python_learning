@@ -296,3 +296,101 @@
 
 # if x < 0:
 #   raise Exception("Sorry, no numbers below zero")
+
+##########################################################
+
+#Classes
+
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+
+
+#     def draw(self):
+#         print('Draw')
+
+
+#     def move(self):
+#         print('Move')
+
+
+# # Point().draw()
+
+# p = Point(10,5)
+
+# # p2 = Point()
+
+# print(f'{p.x} , {p .y}')
+
+
+# class Person:
+#     # This is a constructor
+#     def __init__(self, name):
+#         self.name =  name
+
+
+#     def  talk(self):
+#         print(f'My name is {self.name}')
+
+
+# john = Person("John")
+
+# print(john.name)
+# john.talk()
+
+
+####################################
+#inheritance
+
+# class Mammals:
+#     def walk(self):
+#         print("Walk")
+
+
+# class  Dog(Mammals):
+#     def bark(self):
+#         print('Bark')
+
+
+# dog = Dog()
+# dog.walk()
+# dog.bark()
+
+#####################################
+#modules
+
+# import converterModule
+# from converterModule import m_to_cm
+
+
+# print(converterModule.cm_to_m(30))
+# print(m_to_cm(20))
+
+# from maxNumberModule import find_max
+
+# numberList = [1,2,6,5,3,5,9,2]
+
+
+# print(find_max(numberList))
+
+####################################
+#Packages
+
+# from measurementPackage import  m_km_module
+
+# print(m_km_module.km_to_m(10))
+
+import random
+
+
+class Dice:
+    def roll(self):
+        x = random.randint(1,6)
+        y = random.randint(1,6)
+        return (x,y)
+
+
+dice = Dice()
+print(dice.roll())
+
