@@ -381,16 +381,24 @@
 
 # print(m_km_module.km_to_m(10))
 
-import random
+# import random
+
+ 
+# class Dice:
+#     def roll(self):
+#         x = random.randint(1,6)
+#         y = random.randint(1,6)
+#         return (x,y)
 
 
-class Dice:
-    def roll(self):
-        x = random.randint(1,6)
-        y = random.randint(1,6)
-        return (x,y)
+# dice = Dice()
+# print(dice.roll())
 
+######################################
+#Files and directories
 
-dice = Dice()
-print(dice.roll())
+from pathlib import Path
 
+path = Path()
+for file in path.glob('*.*'):
+    print(file)
